@@ -1,0 +1,14 @@
+// Base, não comentar
+@import "config";
+@import "base/base";
+@import "base/popup-zap";
+@import "base/form";
+
+// Plugins, se não for usar comentar a linha
+@import "../plugins/pure-slide/pure-slide";
+//@import "../plugins/pure-lightbox/pure-lightbox";
+
+// Layout, Sections e Mobile
+@import "sections";
+@import "mobile";
+@import "santana";

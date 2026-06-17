@@ -1,0 +1,219 @@
+@media screen and (max-width: 768px) {
+    //header
+    header.tpl__header {
+        .container{
+            justify-content: center;
+            nav{
+                display: none;
+            }
+            a{
+                display: none;
+            }
+        }
+    }
+
+    //section__hero
+    .section__hero{
+        background-position: 70% -125%;
+        background-size: auto;
+        .container{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    //section__fotos
+    .section__fotos{
+        padding: 0 0 4rem 0;
+        .container{
+            .coroa{
+                display: none;
+            }
+            .pure-slide{
+                .pure-slide__container{
+                    img{
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    //section__espaco
+    .section__espaco{
+        .container{
+            .col{
+                flex-wrap: wrap;
+                .text__espaco{
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    width: auto;
+                    text-align: center;
+                }
+            }
+            .pure-slide{
+                .pure-slide__container{
+                    img{
+                        width: auto;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+
+    //section__cardapio
+    .section__cardapio{
+        .container{
+            .col{
+                flex-wrap: wrap;
+                .cardapio__text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding-bottom: 2rem;
+                }
+            }
+            .comida{
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                .prato{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //section__depoimentos
+    .section__depoimentos{
+        .container{
+            .text__depoimento{
+                width: auto;
+            }
+            p{
+                width: auto;
+            }
+            .depoimentos{
+                flex-wrap: wrap;
+                .depoimento{
+                    width: auto;
+                    padding: 1rem .5rem 2rem 3rem;
+                }
+            }
+        }
+    }
+
+    //section__parcelamento
+    .section__parcelamento{
+        .container{
+            .parcelamento{
+                flex-wrap: wrap;
+                border-radius: 0 0 175px 175px;
+                .col{
+                    flex-direction: column;
+                    h2{
+                        text-align: center;
+                    }
+                    .botao{
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    //section__orcamento
+    .section__orcamento{
+        .container{
+            #form__container{
+                flex-wrap: wrap;
+                justify-content: center;
+                .form__container{
+                    width: auto;
+                    border: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    //footer
+    .tpl__footer {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    //DEBUTANTE__SANTANA
+    #santana{
+        main{
+            .section__hero{
+                background-position: 50% 100%;
+                background-size: auto;
+            }
+            .section__fotos{
+                padding-top: 4rem;
+            }
+        }
+    }
+    //DEBUTANTE__VILA__ROMANA
+    #vila__romana{
+        .section__hero{
+            background-position: 87% -100%;
+            background-size: auto;
+        }
+    }
+    //DEBUTANTE__ANALIO__FRANCO
+    #analia__franco{
+        .section__hero{
+            background-position: 90% -160%;
+            background-size: auto;
+        }
+    }
+
+    //EVENTO__CANTAREIRA
+    #evento__cantareira{
+        .section__hero{
+            background-position: 34% -4%;
+            background-size: auto;
+        }
+        .section__fotos{
+        padding-top: 4rem;
+        }
+    }
+
+    //EVENTO__SANTANA
+    #evento__santana{
+        .section__hero{
+            background-position: 61% -4%;
+            background-size: auto;
+        }
+    }
+
+    //EVENTO__VILA__ROMANA
+    #evento__vila__romana{
+        .section__hero{
+            background-position: 34% -4%;
+            background-size: auto;
+        }
+        .section__fotos{
+        padding-top: 4rem;
+        }
+    }
+
+    //EVENTO__ANALIO__FRANCO
+    #evento__analia__franco{
+        .section__hero{
+            background-position: 46% -75%;
+            background-size: auto;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+//dubutante__santana
+#santana {
+  //section__hero
+  .section__hero {
+    background-image: url("../images/santana/bg__hero.png");
+    background-position: 0% 60%;
+    background-size: 130%;
+  }
+}
+
+//dubutante__vila__romana
+#vila__romana {
+  //section__hero
+  .section__hero {
+    background-image: url("../images/vila__romana/bg__hero.png");
+  }
+}
+
+//dubutante__analia__franco
+#analia__franco {
+  //section__hero
+  .section__hero {
+    background-image: url("../images/analia__franco/bg__hero.png");
+  }
+}
+
+//evento__cantareira
+#evento__cantareira {
+  //section__hero
+  .section__hero {
+    background-image: url("../images/evento__corporativo/cantareira/bg__hero.png");
+
+    .container {
+      p {
+        color: white;
+      }
+
+      .cursiva {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+//evento__santana
+#evento__santana {
+  //section__hero
+  .section__hero {
+    background-image: url("../images/evento__corporativo/santana/bg__hero.png");
+
+    .container {
+      p {
+        color: white;
+      }
+
+      .cursiva {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+//evento__vila__romana
+#evento__vila__romana {
+  //section__hero
+  .section__hero {
+    background-image: url("../images/evento__corporativo/vila__romana/bg__hero.png");
+
+    .container {
+      p {
+        color: white;
+      }
+
+      .cursiva {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+//evento__analia__franco
+#evento__analia__franco {
+  //section__hero
+  .section__hero {
+    background-image: url("../images/evento__corporativo/analia__franco/bg__hero.png");
+
+    .container {
+      p {
+        color: white;
+      }
+
+      .cursiva {
+        color: $secondary;
+      }
+    }
+  }
+}

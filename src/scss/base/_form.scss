@@ -1,0 +1,34 @@
+/****************************/
+/** NÃO ALTERE ESTE ARQUIVO */
+/****************************/
+
+// Deve ser aplicada ao formulário <form class='form__container'>
+.form__container{
+    display: flex;
+    flex-direction: column;
+    gap: $form-container-gap;
+}
+// Referente a uma linha do formulário, dentro fica o label e o input
+.form__line{
+    label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+    }
+}
+// Aplicado a todos os inputs, selects e textareas
+.form__control{
+    background-color: $input-bg;
+    width: 100%;
+    border: $input-border;
+    border-radius: $input-radius;
+    padding: $input-padding;
+    color: $input-color;
+    &::placeholder {
+        color: $input-placeholder; /* Escolha a cor desejada */
+        opacity: 1; /* Ajuste a opacidade, se necessário */
+    }
+}
+textarea.form__control{
+    min-height: 9rem;
+}

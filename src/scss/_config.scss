@@ -1,0 +1,114 @@
+
+// Cores
+$primary: #15262D;
+$secondary: #CBA36B;
+$tertiary: #7D8B90;
+
+// Body
+$body-bg: #F5F5F5;
+
+// Fonts
+$text-font-size: 1rem;
+$text-color: white;
+$text-font: 'Plus Jakarta Sans', sans-serif;
+$text-font-weight: 400;
+$text-line-height: 1.5;
+
+// Copys (aplicado a textos de parágrafos p.copy)
+$copy-font-size: 1.15rem;
+$copy-margin: 0 0 3rem 0;
+
+// Headers
+$header-color: white;
+$header-font: 'Neuton', sans-serif;
+$header-font-weight: 400;
+$header-line-height: 1.2;
+$header-h1: 3.13rem;
+$header-h2: 2.5em;
+$header-h3: 1.75em;
+$header-h4: 1.5em;
+$header-h5: 0.83em;
+$header-h6: 0.67em;
+
+// Ttl Headers (aplicado a títulos de seção .ttl)
+$ttl-font-size: 3rem;
+$ttl-margin: 0 0 2rem 0;
+$ttl-span-font-size: 1rem;
+
+// Links
+$link-color: #101010;
+$link-color-hover: #101010;
+
+// Botões
+$button-color: #FFF;
+$button-bg: #CBA36B;
+$button-hover-bg: #253132;
+$button-hover-color: #FFF;
+$button-radius: 1.5rem;
+$button-padding: .8rem 3rem;
+$button-font-size: 1rem;
+$button-font-weight: 700;
+$button-border: 0;
+$button-icon-size: 1.5rem;
+$button-icon-color: #fff;
+
+// Sombras:
+$shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+
+// Containers
+$container-width: 1200px;
+$section-padding: 4rem 0; // No desktop
+$section-padding-mobile: 3rem 0; // No mobile
+
+// Formulários
+$form-container-gap: 1.5rem;
+$input-color: #101010;
+$input-bg: #eee;
+$input-border: 0;
+$input-radius: 0 1.5rem 1.5rem .5rem;
+$input-padding: .75rem 1rem;
+$input-placeholder: #777;
+
+// Definição de fontes
+
+/* waterfall-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Waterfall';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/waterfall-v6-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* plus-jakarta-sans-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/plus-jakarta-sans-v8-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/plus-jakarta-sans-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/plus-jakarta-sans-v8-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/plus-jakarta-sans-v8-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

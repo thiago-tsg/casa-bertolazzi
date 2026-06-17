@@ -1,0 +1,546 @@
+/****************************/
+/** NÃO ALTERE ESTE ARQUIVO */
+/****************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove as margens em todos os navegadores.
+ */
+body {
+  background-color: $body-bg;
+  margin: 0;
+  font-size: 16px;
+  line-height: $text-line-height;
+  color: $text-color;
+  font-family: $text-font;
+}
+
+/**
+ * Renderiza os elementos `main` de forma consistente no IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Corrige o herdar fonte `font-size` para `h1` elementos em `section` e
+ * elementos `article` no Chrome, Firefox e Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-family: $header-font;
+  color: $header-color;
+  font-weight: $header-font-weight;
+  line-height: $header-line-height;
+}
+
+h1, .h1 {
+  font-size: $header-h1;
+}
+
+h2, .h2 {
+  font-size: $header-h2;
+}
+
+h3, .h3 {
+  font-size: $header-h3;
+}
+
+h4, .h4 {
+  font-size: $header-h4;
+}
+
+h5, .h5 {
+  font-size: $header-h5;
+}
+
+h6, .h6 {
+  font-size: $header-h6;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  background-color: transparent;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Adiciona a margem correta em `ol`, `ul` elementos em navegadores que têm um
+ *    arquivo stylesheet para `body`.
+ * 2. Corrige o padding em `ul` no IE 10 e 11.
+ */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/**
+ * 1. Corrige o herdar fonte `font-size` e o peso para elementos `figcaption` e `figure`
+ *    elementos em Chrome, Edge, e Safari.
+ * 2. Corrige o herdar fonte `font-size` para elementos `cite` e `fig`
+ *    elementos em Chrome, Firefox e Safari.
+ */
+blockquote,
+dl,
+dd,
+figure,
+address,
+p,
+pre {
+  font-style: normal;
+}
+
+/**
+ * Corrige o padding em `fieldset` elementos no IE 10 e 11 e no Edge.
+ */
+fieldset {
+  padding: 0;
+}
+
+/**
+ * Corrige o alinhamento em `legend` elementos com `display: table` no IE 10 e 11 e no Edge.
+ */
+legend {
+  padding: 0;
+}
+
+/**
+ * Adiciona o mínimo tamanho de caixa possível para `iframe` elementos no IE 10 e
+ * no IE 11.
+ */
+iframe {
+  border: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove o cinza de fundo em textos ativos em IE 10.
+ */
+/**
+ * 1. Remove a sublinha de espaços em `abbr[title]` elementos no Chrome, Edge, e Safari.
+ * 2. Remove a borda inferior em `abbr[title]` elementos no Firefox.
+ * 3. Adiciona cursor `help` em `abbr[title]` elementos no Safari.
+ */
+abbr[title] {
+  text-decoration: none; /* 1 */
+  cursor: help; /* 3 */
+}
+
+/**
+ * Adiciona estilo `bold` para `b` e `strong` elementos.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Corrige o herdar cor do texto em `button` elementos no Chrome e Firefox.
+ * 2. Corrige o herdar fonte `font-size` em `select` elementos no Firefox.
+ * 3. Remove a herança de fonte `font-size` em `option` elementos no Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Remove o inner padding e o border em `button` e `input` elementos no Firefox.
+ */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Corrige o overflow não funcionando em `button` elementos no IE 11.
+ */
+button {
+  text-transform: none;
+}
+
+/**
+ * 1. Remove o inner padding e o border em `button` e `input` elementos no Firefox.
+ * 2. Corrige o incapaz de estilizar `button` elementos clicáveis e
+ *    `input` elementos em iOS e Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove a borda interna e o padding em `fieldset` elementos no Mozila.
+ */
+fieldset {
+  border: 1px solid #a0a0a0;
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * Corrige o texto cortado quando o `overflow` é definido para `hidden` no IE 10 e no IE 11.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * 1. Remove a borda superior no `textarea` elementos scrolando no Safari.
+ * 2. Corrige o scroll para textos longos e inquebráveis em `textarea` elementos no IE 10 e no IE 11.
+ */
+textarea {
+  overflow: auto; /* 2 */
+}
+
+/**
+ * 1. Adiciona `webkit` aparência para `progress` elementos no Safari.
+ * 2. Corrige a alinhamento vertical do `progress` elementos no Chrome, Firefox, e Safari.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Adiciona a mão pointer em qualquer elemento `button` para navegadores que não seguem a especificação.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
+  cursor: pointer;
+}
+
+/**
+ * 1. Remove o estilo padrão de `button` e `input` elementos no iOS.
+ * 2. Corrige o incapaz de estilizar elementos `button` clicáveis e
+ *    `input` elementos no iOS.
+ */
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/**
+ * 1. Remove a borda interna e padding no Mozilla.
+ * 2. Corrige o background não sendo definido corretamente em `button` elementos desabilitados no Firefox.
+ */
+button:disabled,
+input:disabled {
+  background-color: transparent;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Adiciona estilos para `::placeholder`.
+ */
+::placeholder {
+  opacity: 1; /* Firefox */
+  color: $input-placeholder; /* Estilo de placeholder */
+}
+
+/**
+ * Corrige o `user-select` não funcionando corretamente em todos os navegadores.
+ */
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+
+/* Corrige o Safari 4-5, Chrome 1-9 */
+/* Corrige o Safari 4-5. Não corrige o Chrome 1-9. */
+/* Corrige o Safari 5.1, Chrome 10+ */
+::selection {
+  background: $primary; /* WebKit/Blink Browsers */
+  color: $secondary;
+}
+
+::-moz-selection {
+  background: $primary; /* Gecko Browsers */
+  color: $secondary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**
+ * Classes de apoio
+ */
+.botao {
+  background-color: $button-bg;
+  color: $button-color;
+  font-weight: $button-font-weight;
+  padding: $button-padding;
+  border-radius: $button-radius;
+  border: $button-border;
+  font-size: $button-font-size;
+  transition: all .3s ease-in-out;
+  gap: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  i {
+    font-size: $button-icon-size;
+    color: $button-icon-color;
+  }
+
+  img {
+    width: $button-icon-size;
+    height: auto;
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $button-hover-bg;
+    color: $button-hover-color;
+    transition: all .3s ease-in-out;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-xs {
+  gap: .25rem;
+}
+
+.gap-sm {
+  gap: .5rem;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.gap-2-lg {
+  gap: 4rem;
+}
+
+.ratio1x1 {
+  aspect-ratio: 1/1;
+}
+
+.ratio3x4 {
+  aspect-ratio: 3/4;
+}
+
+.ratio4x3 {
+  aspect-ratio: 4/3;
+}
+
+.ratio16x9 {
+  aspect-ratio: 16/9;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.menu__horizontal {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.justify-content-center {
+    justify-content: center;
+  }
+
+  &.justify-content-end {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-xs-1 {
+    grid-template-columns: 1fr;
+  }
+  .grid-xs-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-xs-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 0 1rem;
+  padding: 0;
+
+  li {
+    flex-basis: 20%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.copy {
+  font-size: $copy-font-size;
+  margin: $copy-margin;
+  font-weight: 400;
+
+  &.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// TTls
+.ttl {
+  font-size: $ttl-font-size;
+  margin: $ttl-margin;
+  font-weight: 600;
+
+  span {
+    display: block;
+    text-transform: uppercase;
+    font-size: $ttl-span-font-size;
+  }
+
+  &.center {
+    text-align: center;
+  }
+}
+
+.pulse {
+  animation: pulseItem linear 1s infinite;
+}
+
+@keyframes pulseItem {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

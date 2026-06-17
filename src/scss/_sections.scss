@@ -1,0 +1,481 @@
+body {
+  background-color: $primary;
+}
+header.tpl__header {
+  background: #00000080;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: all .3s;
+  &.fixed{
+    padding: .5rem;
+    transition: all .3s;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    img.logo{
+      height: 40px;
+      transition: all .3s;
+    }
+    li a{
+      color: black;
+    }
+
+    .botao{
+      color: black;
+    }
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    img.logo{
+      width: 15rem;
+      height: 60px;
+    }
+  }
+
+  nav{
+    ul{
+      gap: 2rem;
+      li {
+        a{
+          color: #ffffff;
+          text-decoration: none;
+          position: relative;
+          padding: .5rem 0;
+          &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #CBA36B;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            z-index: 100;
+          }
+          &:hover::after {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+  .botao{
+    background-color: transparent;
+    border: 1px solid $secondary;
+    border-radius: .5rem;
+    color: white;
+    padding: .5rem 1rem;
+    &:after{
+      display: none;
+    }
+  }
+
+}
+footer.tpl__footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+  p{
+    margin: 0;
+  }
+  a {
+    color: white;
+  }
+}
+.botao.zap{
+  background-image: url("../../assets/images/icon-whatsapp.webp");
+  background-size: 32px 32px;
+  background-position: 1rem center;
+  background-repeat: no-repeat;
+  padding-left: 3.5rem;
+}
+.ttl.white, .copy.white{
+  color: white;
+  span{
+    display: block;
+  }
+}
+
+.section__hero {
+  background-image: url("../images/bg/bg__hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  .container {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 6rem;
+
+    img {
+      margin: 0 auto;
+    }
+
+    p {
+      color: $secondary;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 6rem;
+      margin: 0;
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+
+    .cursiva {
+      font-family: 'Waterfall';
+      font-size: 6rem;
+    }
+
+    .botao {
+      border-radius: .5rem;
+    }
+  }
+}
+
+.section__fotos {
+  padding: $section-padding;
+  background: linear-gradient(to bottom, #15262D, #2D4954);
+  position: relative;
+  .container{
+    .coroa{
+      position: absolute;
+      right: 0;
+      top: -10rem;
+      img{
+      }
+    }
+    .pure-slide__container {
+      .slide, .slide:nth-child(2) {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.section__espaco {
+  padding: $section-padding;
+  background-image: url("../images/bg/bg__espaco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    .col {
+      .text__espaco {
+        width: 40%;
+
+        h2 {
+          span {
+            color: $secondary;
+          }
+        }
+
+        p {
+          width: 25rem;
+          color: $tertiary;
+        }
+
+        .btn__espaco {
+          padding-top: 1rem;
+
+          #btn__espaco2 {
+            border-radius: 0;
+            padding: .5rem .5rem .5rem 3.3rem;
+            background-color: transparent;
+            border: 1px solid $secondary;
+          }
+        }
+
+        #btn__espaco1 {
+          border-radius: 0;
+          padding: 1rem;
+        }
+      }
+    }
+
+    .pure-slide {
+
+    }
+  }
+}
+
+.section__cardapio {
+  padding: $section-padding;
+
+  .container {
+    .col {
+      margin-bottom: 6rem;
+
+      #text__detalhe {
+        color: $secondary;
+      }
+
+      p {
+        color: $tertiary;
+      }
+
+      .botao {
+        border-radius: 0;
+      }
+    }
+    .comida {
+      position: relative;
+      border: 1px solid $secondary;
+      padding: 1.5rem 2rem;
+      .prato{
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%; /* Centraliza a linha horizontalmente */
+          width: 100%; /* Define o comprimento como metade da div */
+          height: 40%; /* Espessura da linha */
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)); /* Gradiente linear */
+          transform: translateX(-50%); /* Mantém a linha centralizada */
+        }
+        img{
+          width: 100%;
+        }
+        span{
+          z-index: 100;
+          position: absolute;
+          bottom: 2rem;
+          left: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.section__depoimentos {
+  padding: $section-padding;
+  background-image: url("../images/bg/bg__depoimento.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    .text__depoimento {
+      color: $secondary;
+    }
+
+    p {
+      color: $tertiary;
+      width: 48rem;
+    }
+
+    .depoimentos {
+      background-size: 100%;
+      padding: 6rem 3rem 3rem;
+      background-repeat: no-repeat;
+      background-position: top center, bottom center;
+      background-image: url(../images/depoimento/arco-top.webp), url(../images/depoimento/arco-bottom.webp);
+
+      .depoimento {
+        background-image: url("../images/depoimento/bg-depoimento.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        padding: 4rem 2rem 4rem 6rem;
+        flex-direction: column;
+
+        p {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.section__parcelamento {
+  padding: $section-padding;
+  .container {
+    .parcelamento {
+      background-color: $secondary;
+      border-radius: 0 150px 150px 0;
+      padding: 1rem 0;
+
+      .col {
+        flex-direction: column;
+        .ttl {
+          width: 20rem;
+        }
+
+        .botao {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.section__orcamento {
+  padding: $section-padding;
+
+  .container {
+    .detalhe__orcamento {
+      flex-direction: column;
+    }
+    form {
+      width: 60%;
+      padding-right: 1rem;
+      border-right: 1px solid #ccc;
+      .form__line {
+        label {
+          display: none;
+        }
+      }
+      button{
+        background-color: $secondary;
+      }
+      }
+    }
+    .form__infos {
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: flex;
+          background-color: #dbdbdb;
+          margin-bottom: 1rem;
+          gap: 1rem;
+          padding: 1rem;
+          border-radius: .5rem;
+
+          .img {
+            background-color: #101010;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 1.5rem;
+              height: auto;
+            }
+          }
+
+          span {
+            display: block;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            color: black;
+          }
+
+          address,
+          a {
+            color: #101010;
+          }
+        }
+      }
+    }
+  }
+
+.data {
+    appearance: none;
+    background-image: url('../images/calendar.svg');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+  }
+
+.obrigado {
+  .tpl__header {
+    .container {
+      justify-content: center;
+    }
+  }
+
+  .tpl__main {
+    background-image: url("../images/bg__hero.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .section__obrigado {
+      height: 92vh;
+
+      .container {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+
+        div {
+          justify-content: center;
+          flex-direction: column;
+          padding: 2.5rem 1.5rem;
+          border: 1px solid white;
+          border-radius: .5rem;
+          backdrop-filter: blur(10px);
+          background-color: rgba(255, 255, 255, 0.2);
+
+          h1 {
+
+          }
+
+          .botao {
+            margin: 0 auto;
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.termos {
+  .tpl__main {
+    .section__texts {
+      padding: 8rem 0 4rem;
+
+      .container {
+        h2 {
+          padding: 4rem 0 .5rem;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.privacidade {
+  main {
+    section {
+      .container {
+        div {
+          .ttl {
+            font-size: 2rem;
+
+          }
+        }
+      }
+    }
+  }
+}
